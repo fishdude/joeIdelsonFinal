@@ -1,0 +1,53 @@
+/* CSS declarations go here */
+@font-face {
+  font-family: "digifont";
+  src: url("/Audiowide-Regular.ttf");
+ 
+  }
+
+html{
+	
+
+
+}
+body{
+	background: url('/subway-lines.png') repeat ;
+	background-repeat: repeat;
+}
+
+#nameFont{
+	font-family: "digifont";
+	font-size: 150%;
+}
+
+#pushDown{
+	margin-top: 60px;
+}
+
+.fishFlex{
+	background-color: black;
+	position:relative;
+	padding-top:1.5625rem;
+	padding-bottom:67.5%;
+	height:0;
+	margin-bottom:1rem;
+	overflow:hidden;
+	width:100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+
+
+#vidwrap{
+	position:absolute;top:0;left:0;width:100%;height:100%;padding-bottom: 2.5%;
+}
+
+#stillGallery{
+	background-color: black;
+}
+
+#contact{
+	background-color: white;
+}
+
