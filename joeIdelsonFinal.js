@@ -8,7 +8,7 @@ if (Meteor.isClient) {
   });
 
 
-
+/*
   Template.header.rendered = function () {
     $(document).foundation();
   };
@@ -18,9 +18,23 @@ if (Meteor.isClient) {
   };
   Template.stillGallery.rendered = function () {
     $(document).foundation();
-  };
+  };*/
 }
 
 if (Meteor.isServer) {
   
 }
+
+Meteor.startup(function () {
+  if (typeof(Router) !== 'undefined' && Router.onAfterAction) {
+    Router.onAfterAction(function () {
+      Deps.afterFlush(function () {
+        $(document).foundation();
+      });
+    });
+  } else {
+    UI.body.rendered = function () {
+      $(document).foundation();
+    };
+  }
+});
