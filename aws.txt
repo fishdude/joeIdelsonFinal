@@ -1,0 +1,6 @@
+mrt bundle bundle.tgz 
+tar -zxvf bundle.tgz 
+
+PORT=80 MONGO_URL=mongodb://localhost:27017/ ROOT_URL=http://ec2-54-215-57-243.us-west-1.compute.amazonaws.com/ node bundle/main.js
+
+PORT=80 MONGO_URL=mongodb://localhost:27017/ ROOT_URL=http://ec2-54-215-57-243.us-west-1.compute.amazonaws.com/ nohup node bundle/main.js &

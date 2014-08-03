@@ -4,6 +4,7 @@ if (Meteor.isClient) {
     this.route('reel', {path: '/'})
     this.route('animationGallery', {path: '/animation-gallery'})
     this.route('stillGallery', {path: '/still-gallery'})
+    this.route('otherWork', {path: '/other-work'})
     this.route('contact', {path: '/contact'})
   });
 
